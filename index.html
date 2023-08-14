@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.33/moment-timezone-with-data.min.js"></script>
+    <link href="css/mobiscroll.javascript.min.css" rel="stylesheet" />
+    <script src="js/mobiscroll.javascript.min.js"></script>
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="eventcalendar"></div>
+    
+    <div style="display: none">
+      <div id="demo-add-popup">
+          <div class="mbsc-form-group">
+              <label>
+                  Title
+                  <input mbsc-input id="event-title">
+              </label>
+          </div>
+          <div class="mbsc-form-group">
+              <label>
+                  Starts
+                  <input mbsc-input id="start-input" />
+              </label>
+              <label>
+                  Ends
+                  <input mbsc-input id="end-input" />
+              </label>
+              <div id="event-date"></div>
+              </div>
+              <div class="mbsc-button-group">
+                  <button class="mbsc-button-block" id="event-delete" mbsc-button data-color="danger" data-variant="outline">Delete event</button>
+              </div>
+          </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
